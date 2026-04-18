@@ -1,0 +1,162 @@
+/* My Global Style */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-grey: #71718f;
+    --black: #000;
+    --white: #fff;
+    --golden-yellow: #fecc4c;
+    --yellow: #ffcc4c;
+    --slack-black: #2e1e06;
+    --orange: #ffac33;
+    --dark-orange: #f89808;
+}
+
+body {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+/* Sim's Story Header */
+.brand-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.brand-header a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.social-icons a{
+    color: var(--white);
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: var(--golden-yellow);
+}
+
+/* Main Container */
+.simstory-container {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border: 10px solid var(--white);
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer links */
+footer a{
+    text-decoration: none;
+    color: var(--slack-black);
+    font-size: 1.2rem;
+    font-family: monospace;
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color: var(--orange);
+}
+
+/* Media Queries */
+/* @media (min-width: 760px) {
+    .btn-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 780px) {
+    .brand-header{
+        display: block;
+    }
+} */
+/* --- Media Queries --- */
+
+/* For Tablets and Desktops (768px and up) */
+@media (min-width: 768px) {
+  .brand-header {
+    flex-direction: row; /* Keep items in a line */
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  .btn-container {
+    flex-direction: row; /* Buttons sit side-by-side */
+    gap: 15px; /* Adds space between buttons */
+  }
+}
+
+/* For Mobile (Below 768px) */
+@media (max-width: 767px) {
+  .brand-header {
+    flex-direction: column; /* Stack logo, icons, and text */
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .brand-header div {
+    margin-top: 15px;
+  }
+
+  h1 {
+    font-size: 2rem; /* Shrink title for small screens */
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Result */
+#result {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+/* Btn Style */
+.btn {
+    cursor: pointer;
+    width: 200px;
+    margin: 10px 0 10px 0.5rem;
+    padding: 10px 20px;
+    color: var(--black);
+    background-color: var(--gold);
+    background-image: linear-gradient(var(--golden-yellow), var(--orange));
+    border: 2px solid var(--slack-black);
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Slight pop effect */
+    background-image: linear-gradient(var(--yellow), var(--dark-orange));
+}
