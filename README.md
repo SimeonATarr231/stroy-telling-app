@@ -1,11 +1,13 @@
 Sim's Story 📖
 A lightweight, interactive storytelling web application built to deliver instant, bite-sized narratives. This project was developed as an educational workshop to master DOM manipulation and dynamic styling using Vanilla JavaScript.
+
 🎯 Project Purpose
 This app was created for educational purposes to demonstrate:
 Object Mapping: Storing and retrieving data using JavaScript objects.
 DOM Manipulation: Dynamically updating text content and CSS styles.
 Event Handling: Using arrow functions to pass arguments through event listeners.
 Responsive Design: Using CSS Flexbox and Media Queries for a mobile-first experience.
+
 ✨ Features
 Mood-Based Stories: Choose between "Macabre" (Scary), "Yarn" (Funny), or "Adventure" tales.
 Dynamic UI: The container's border color changes instantly to match the genre's "vibe."
@@ -23,6 +25,8 @@ FontAwesome: Social media icons and visual anchors.
 index.html - The core structure of the app.
 Style.css - Custom styling and responsive layouts.
 app.js - The logic behind the story selection and UI updates.
+
+
 🚀 How to Run
 Clone the repository:
 bash
