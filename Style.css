@@ -38,9 +38,9 @@ body {
     font-family: cursive;
 }
 
-.social-icons a{
-    color: var(--white);
-    font-size: 2rem;
+.logo i{
+    color: var(--orange);
+    font-size: 5rem;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
